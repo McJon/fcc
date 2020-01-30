@@ -1,0 +1,21 @@
+<img src="{{ section.settings.image_url | img_url: '1024x1024' }}" alt="{{ section.settings.image_url.alt }}">
+
+{% schema %}
+    {
+        "name": "Image Gallery",
+        "class": "image-gallery",
+        "settings": [
+            {
+                "id": "image_url",
+                "type": "image_picker",
+                "label": "Image URL"
+            }
+        ],
+        "presets": [
+            {
+            "name": "Image Gallery",
+            "category": "Custom Content"
+            }
+        ]
+    }
+{% endschema %}
